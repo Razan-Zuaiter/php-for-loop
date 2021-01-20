@@ -53,23 +53,23 @@ echo "<br>"."*********************"."<br>";
 
 //Question no.3
 function printStar1(){
-$inital_no=1;
-    for($x=1; $x<=5; $x++)
-    {
-    for($i=5; $i>$x ;$i--)
-    {
-      echo $inital_no." ";  
-    } 
-    for($k=1; $k<=$x; $k++)
-    {
-      echo $inital_no+($x-1)." " ;  
-    } 
-    echo "<br>";  
-  
- }
+  function printStar(){
+    for ($row = 1 ; $row <=5 ; $row++ ){
+        for($char = "A" ; $char <= "E" ; $char++ ){
+            echo str_repeat(" A " , 5-$row). str_repeat($char , $row)." <br> ";
+            if($row++ > $row){
+            break;
+            }
+        }
+    }
+
+  }
 }
-printStar1();
+printStar();
+
 echo "<br>"."*********************"."<br>";
+
+
 
 
 //Question no.4
@@ -120,9 +120,7 @@ function Fibonacci(){
       $number1 = $number3;
       $sum =   $sum+1;
    }
-  
-  
-  
+ 
 }
 
 Fibonacci();
@@ -169,8 +167,6 @@ for($row=1;$row<=8;$row++)
 echo "<br>"."*********************"."<br>";
 
 
-
-
 //Question no.10
 for($i=1;$i<= 10;$i++)
 {
@@ -183,12 +179,7 @@ for($i=1;$i<= 10;$i++)
       }
       echo "</tr>";
 }
- 
 echo "<br>"."*********************"."<br>";
-
-
-
-
 
 
 //Question no.11
